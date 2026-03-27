@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --brand-950: #1a1a1a; --brand-900: #2a2a2a; --brand-800: #3d3d3d;
+  --brand-700: #525252; --brand-600: #6b6b6b; --brand-500: #8a8a8a;
+  --brand-400: #a3a3a3; --brand-300: #bfbfbf; --brand-200: #d9d4cb;
+  --brand-100: #e5e0d5; --brand-50: #f2efe8;
+  --accent: #6b7c5e; --accent-light: #8a9e7a; --accent-dark: #4d5c42;
+  --success: #4d5c42; --warning: #b8860b; --danger: #a63d40;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'DM Sans', system-ui, sans-serif; background-color: #f7f5f0; color: #2a2a2a; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d9d4cb; border-radius: 3px; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: #6b7c5e !important; box-shadow: 0 0 0 3px rgba(107,124,94,0.12); }
+@keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+@keyframes scaleIn { from { opacity:0; transform:scale(0.95); } to { opacity:1; transform:scale(1); } }
+.fade-in { animation: fadeIn 0.3s ease-out forwards; }
+.scale-in { animation: scaleIn 0.2s ease-out forwards; }
